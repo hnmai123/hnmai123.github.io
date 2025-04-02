@@ -11,3 +11,85 @@ body {
     width: 200px;
     height: auto;
 }
+
+#navbar {
+    position: fixed;
+    top: 0;
+    padding: 10px;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.755);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-line {
+    position: fixed;
+    top: 30px; 
+    width: 100%;
+    border: none;
+    height: 2px;
+    background-color: rgba(159, 157, 157, 0.396); /* Change color if needed */
+    z-index: 999;
+}
+
+#navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+#navbar ul li {
+    margin: 0 20px;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+#navbar ul li a:hover {
+    color: #007BFF;
+}
+
+#contents {
+    margin-top: 40px;
+    padding: 2%;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#connection {
+    position: fixed;
+    bottom: 0;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.755);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#connection ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+#connection ul li {
+    margin: 0 10px;
+}
+
+.fa-brands {
+    font-size: 50px;
+    color: black;
+}
+
+.fa-brands:hover {
+    color: #007BFF;
+}
