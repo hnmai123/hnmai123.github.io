@@ -1,4 +1,13 @@
 body {
-    background-color: #DCFBFF;
+    background-color: white;
     font-family: 'Courier New', Courier, monospace;
+}
+
+.myImage {
+    border-radius: 100%;
+    object-fit: cover;
+    margin: 20px auto;
+    display: block;
+    width: 200px;
+    height: auto;
 }
