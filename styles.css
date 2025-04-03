@@ -8,8 +8,10 @@ body {
     object-fit: cover;
     margin: 20px auto;
     display: block;
-    width: 200px;
-    height: auto;
+    width: 300px;
+    height: 300px;
+    float: right;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);;
 }
 
 #navbar {
@@ -53,6 +55,7 @@ body {
 
 #navbar ul li a:hover {
     color: #007BFF;
+    transition: color 0.3s ease
 }
 
 #contents {
@@ -71,6 +74,8 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 #connection ul {
@@ -85,6 +90,10 @@ body {
     margin: 0 10px;
 }
 
+#connection p {
+    font-size: 12px;
+}
+
 .fa-brands {
     font-size: 50px;
     color: black;
@@ -92,4 +101,54 @@ body {
 
 .fa-brands:hover {
     color: #007BFF;
+    transition: color 0.3s ease
+}
+
+#navbar ul li a.active {
+    color: #007BFF;
+    font-weight: bold; 
+}
+
+#navbar ul li a.active:hover {
+    color: #0056b3; 
+    font-weight: bold; 
+}
+
+.bucket-list {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.bucket-list li {
+    margin: 5px 0;
+    position: relative;
+    padding-left: 25px;
+}
+
+.bucket-list li::before {
+    content: "\f005";    
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+@media (max-width: 80%) {
+    .myImage {
+        width: 80%;
+        height: auto; 
+        float: none; 
+        display: block;
+        margin: 0 auto 15px;
+    }
+    #navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    #navbar ul li {
+        margin: 10px 0;
+    }
+    #contents {
+        width: 90%;
+    }
 }
