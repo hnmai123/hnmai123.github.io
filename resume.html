@@ -3,7 +3,8 @@
 <head>
     <title>Huy Mai</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/422b4ef079.js" crossorigin="anonymous"></script></head>
+    <script src="https://kit.fontawesome.com/422b4ef079.js" crossorigin="anonymous"></script>
+</head>
 <body>
     <div id = "navbar">
         <ul>
@@ -13,9 +14,25 @@
         </ul>
     </div>
     <hr class="navbar-line">
+
+    <div id="section-navbar">
+        <ul>
+            <li><a href="#professional-summary">Professional Summary</a></li>
+            <li><a href="#employment-history">Employment History</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education-history">Education History</a></li>
+            <li><a href="#honours-awards">Honours & Awards</a></li>
+            <li><a href="#languages-technologies">Languages & Technologies</a></li>
+            <li><a href="#soft-skills">Soft Skills</a></li>
+        </ul>
+    </div>
+
     <div id ="contents">
-       <h1>My Resume</h1>
-        <table border="1" class ="professional-summary">
+        <div id="header">
+            <h1>My Resume</h1>
+            <h1>Huy Nhat Mai</h1>
+        </div>
+        <table id ="professional-summary">
             <tr>
                 <th>Professional Summary</th>
             </tr>
@@ -31,14 +48,14 @@
             </tr>
         </table>
 
-        <table border="1" class ="employment-history">
+        <table id ="employment-history">
             <tr>
                 <th colspan="3">Employment History</th>
             </tr>
             <tr>
                 <th>Team Member</th>
-                <th>Chatime, Preston, VIC</th>
-                <th>October 2023 - Present</th>
+                <th style="text-align: end;">Chatime, Preston, VIC</th>
+                <th style="text-align: end;">October 2023 - Present</th>
             </tr>
             <tr>
                 <td colspan="3">
@@ -54,13 +71,13 @@
             </tr>
         </table>
         
-        <table border="1" class ="projects">
+        <table id ="projects">
             <tr>
                 <th colspan="2">Projects</th>
             </tr>
             <tr>
                 <th>Fake Paint Application (November 2024)</th>
-                <th><a href="https://github.com/hnmai123/paint-app">Code Repository</a></th>
+                <th style="text-align: end;"><a href="https://github.com/hnmai123/paint-app">Code Repository</a></th>
             </tr>
             <tr>
                 <td colspan="2">
@@ -76,10 +93,10 @@
             </tr>
             <tr>
                 <th>Flappy Bird (October 2024)</th>
-                <th><a href="https://github.com/hnmai123/flappy-bird">Code Repository</a></th>
+                <th style="text-align: end;"><a href="https://github.com/hnmai123/flappy-bird">Code Repository</a></th>
             </tr>
             <tr>
-                <td colspan="2">
+                <td colspan="2" style="border-bottom: 2px solid #ddd;">
                     Developed a Flappy Bird game using Python and Pygame library, this is for me to practice my programming skills,
                     and the mangement of code repository.
                     <br>
@@ -88,21 +105,20 @@
                     Ideas and design were inspired by the original Flappy Bird game and Youtube developer.
                 </td>
             </tr>
-            
         </table>
 
-        <table border="1" class ="education-history">
+        <table id ="education-history">
             <tr>
                 <th colspan="4">Education History</th>
             </tr>
             <tr>
-                <th>Software Engineering</th>
+                <th style="width: 30%">Software Engineering</th>
                 <th>La Trobe University</th>
                 <th>March 2024 - Present</th>
-                <th>WAM: 89/100</th>
+                <th style="text-align: end;">WAM: 89/100</th>
             </tr>
             <tr>
-                <td colspan="4">
+                <td colspan="4" style="border-bottom: 2px solid #ddd;">
                     Core courework includes: Object Oriented Programming, Data Structures and Algorithms, 
                     System Analysis and Design, Mobile Application Development, Cloud Computing, 
                     User Interface Design.
@@ -115,9 +131,9 @@
             </tr>
             <tr>
                 <th>Diploma of Information Technology</th>
-                <th>La Trobe College</th>
+                <th style="width: 23%;">La Trobe College</th>
                 <th>June 2023 - January 2024</th>
-                <th>WAM: 91/100</th>
+                <th style="text-align: end;">WAM: 91/100</th>
             </tr>
             <tr>
                 <td colspan="4">
@@ -129,21 +145,21 @@
             </tr>
         </table>
 
-        <table border="1" class ="honours-awards">
+        <table id ="honours-awards">
             <tr>
                 <th colspan="2">Honours, Certifications</th>
             </tr>
             <tr>
                 <td>Academic Excellence: La Trobe Provost's Commendation 2024</td>
-                <td>2024</td>
+                <td style="text-align: center;">2024</td>
             </tr>
             <tr>
                 <td>Academic Excellence: Graduated Diploma of Information Technology</td>
-                <td>2023-2024</td>
+                <td style="text-align: center;">2023-2024</td>
             </tr>
         </table>
 
-        <table border="1" class ="languages-technologies">
+        <table id ="languages-technologies">
             <tr>
                 <th colspan="2">Languages and Technologies</th>
             </tr>
@@ -158,13 +174,13 @@
             </tr>
         </table>
 
-        <table border="1" class ="soft-skills">
+        <table id ="soft-skills">
             <tr>
                 <th colspan="2">Soft Skills</th>
             </tr>
             <tr>
                 <td>
-                    <ul>
+                    <ul class="soft-skills-list">
                         <li>Teamwork: Gained experience through group assessments at university, 
                             collaborating effectively with peers.
                         </li>
@@ -189,9 +205,28 @@
         <ul>
             <li><a href="https://www.facebook.com/hnmai.19.09/"><i class="fa-brands fa-facebook"></i></a></li>
             <li><a href="https://www.linkedin.com/in/nhat-huy-mai-2b46132bb/"><i class="fa-brands fa-linkedin"></i></a></li>
-            <li><a href="https://github.com/hnmai123/"><i class="fa-brands fa-github"></i></a></li>            
+            <li><a href="https://github.com/hnmai123/"><i class="fa-brands fa-github"></i></a></li>
+            <li><a href="https://www.instagram.com/hnmai.19.09/"><i class="fa-brands fa-instagram"></i></a></li> 
+            <li><a href="mailto:nhathuylk0123@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
         </ul>
         <p>Copyright © 2025 Huy Nhat Mai</p>
     </div>
+    <script>
+        document.querySelectorAll('#section-navbar a').forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                const offset = 80; // Adjust this value based on your header height
+                const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+                const offsetPosition = elementPosition - offset;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>

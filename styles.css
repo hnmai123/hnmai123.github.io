@@ -104,6 +104,16 @@ body {
     transition: color 0.3s ease
 }
 
+.fa-solid {
+    font-size: 50px;
+    color: black;
+}
+
+.fa-solid:hover {
+    color: #007BFF;
+    transition: color 0.3s ease
+}
+
 #navbar ul li a.active {
     color: #007BFF;
     font-weight: bold; 
@@ -152,3 +162,109 @@ body {
         width: 90%;
     }
 }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; 
+    overflow: hidden; 
+}
+
+table th {
+    color: black;
+    padding: 10px;
+    font-weight: bold;
+    border-bottom: 2px solid #ddd;
+}
+
+table td {
+    padding: 10px;
+}
+
+table td:hover {
+    background-color: #51f1fd32;
+}
+
+table tr:first-child {
+    background-color: #51f2fd;
+}
+
+.soft-skills-list {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.soft-skills-list li {
+    margin: 5px 0;
+    position: relative;
+    padding-left: 25px;
+}
+
+.soft-skills-list li::before {
+    content: "\f164";    
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#projects a {
+    text-decoration: none;
+    color: black;
+}
+
+#projects a:hover {
+    color: #007BFF;
+    transition: color 0.3s ease;
+    text-decoration: wavy underline;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid rgba(159, 157, 157, 0.396);
+}
+
+#section-navbar {
+    position: sticky;
+    top: 40px;
+    background-color: rgba(255, 255, 255, 0.755);
+    padding: 10px;
+    z-index: 999;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#section-navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+#section-navbar ul li {
+    display: inline;
+}
+
+#section-navbar ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#section-navbar ul li a:hover {
+    background-color: black;
+    color: white;
+}
+
+
