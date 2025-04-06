@@ -1,6 +1,8 @@
 body {
-    background-color: white;
+    background-color: var(--bg-color);
     font-family: 'Courier New', Courier, monospace;
+    color: var(--text-color);
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 .myImage {
@@ -11,7 +13,7 @@ body {
     width: 300px;
     height: 300px;
     float: right;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);;
+    box-shadow: var(--box-shadow);
 }
 
 #navbar {
@@ -19,7 +21,7 @@ body {
     top: 0;
     padding: 10px;
     z-index: 1000;
-    background-color: rgba(255, 255, 255, 0.755);
+    background-color: var(--navbar-bg);
     width: 100%;
     display: flex;
     justify-content: center;
@@ -31,7 +33,7 @@ body {
     width: 100%;
     border: none;
     height: 2px;
-    background-color: rgba(159, 157, 157, 0.396); /* Change color if needed */
+    background-color: var(--navbar-line-color); 
     z-index: 999;
 }
 
@@ -54,7 +56,7 @@ body {
 }
 
 #navbar ul li a:hover {
-    color: #007BFF;
+    color: var(--navbar-color);
     transition: color 0.3s ease
 }
 
@@ -70,7 +72,7 @@ body {
     position: fixed;
     bottom: 0;
     padding: 10px;
-    background-color: rgba(255, 255, 255, 0.755);
+    background-color: var(--navbar-bg);
     width: 100%;
     display: flex;
     justify-content: center;
@@ -96,31 +98,31 @@ body {
 
 .fa-brands {
     font-size: 50px;
-    color: black;
+    color: var(--text-color);
 }
 
 .fa-brands:hover {
-    color: #007BFF;
+    color: var(--link-color);
     transition: color 0.3s ease
 }
 
 .fa-solid {
     font-size: 50px;
-    color: black;
+    color: var(--text-color);
 }
 
 .fa-solid:hover {
-    color: #007BFF;
+    color: var(--link-color);
     transition: color 0.3s ease
 }
 
 #navbar ul li a.active {
-    color: #007BFF;
+    color: var(--navbar-color);
     font-weight: bold; 
 }
 
 #navbar ul li a.active:hover {
-    color: #0056b3; 
+    color: var(--link-color); 
     font-weight: bold; 
 }
 
@@ -219,7 +221,7 @@ table tr:first-child {
 }
 
 #projects a:hover {
-    color: #007BFF;
+    color: var(--navbar-color);
     transition: color 0.3s ease;
     text-decoration: wavy underline;
 }
@@ -267,4 +269,55 @@ table tr:first-child {
     color: white;
 }
 
+.fa-moon {
+    font-size: 15px;
+}
 
+.fa-sun {
+    font-size: 15px;
+}
+
+.dark-mode-toggle {
+    cursor: pointer;
+    margin-left: 10px;
+    border: none;
+    background: none;
+}
+
+.dark-mode-toggle:hover {
+    color: var(--navbar-color);
+    transition: color 0.3s ease;
+}
+
+.dark-mode-toggle i {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.dark-mode-toggle i.animate {
+    transform: rotate(180deg);
+    opacity: 1;
+}
+
+:root {
+    --bg-color: #ffffff;
+    --text-color: #111111;
+    --navbar-color: #007BFF;
+    --navbar-bg: rgba(255, 255, 255, 0.755);
+    --card-bg: #f2f2f2;
+    --link-color: #0056b3;
+    --button-color: #ffffff;
+    --navbar-line-color: rgba(159, 157, 157, 0.396);
+    --box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  body.dark-mode {
+    --bg-color: #121212;
+    --text-color: #e0e0e0;
+    --navbar-color: #ffffff;
+    --navbar-bg: #b9b7b774;
+    --card-bg: #1e1e1e;
+    --link-color: #67effc;
+    --button-color: #ffffff;
+    --navbar-line-color: rgba(255, 255, 255, 0.396);
+    --box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.5);
+  }

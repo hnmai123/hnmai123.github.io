@@ -32,7 +32,7 @@
             <h1>My Resume</h1>
             <h1>Huy Nhat Mai</h1>
         </div>
-        <table id ="professional-summary">
+        <table id ="professional-summary" class="section">
             <tr>
                 <th>Professional Summary</th>
             </tr>
@@ -48,7 +48,7 @@
             </tr>
         </table>
 
-        <table id ="employment-history">
+        <table id ="employment-history" class="section">
             <tr>
                 <th colspan="3">Employment History</th>
             </tr>
@@ -71,7 +71,7 @@
             </tr>
         </table>
         
-        <table id ="projects">
+        <table id ="projects" class="section">
             <tr>
                 <th colspan="2">Projects</th>
             </tr>
@@ -107,7 +107,7 @@
             </tr>
         </table>
 
-        <table id ="education-history">
+        <table id ="education-history" class="section">
             <tr>
                 <th colspan="4">Education History</th>
             </tr>
@@ -145,9 +145,9 @@
             </tr>
         </table>
 
-        <table id ="honours-awards">
+        <table id ="honours-awards" class="section">
             <tr>
-                <th colspan="2">Honours, Certifications</th>
+                <th colspan="2">Honours and Awards</th>
             </tr>
             <tr>
                 <td>Academic Excellence: La Trobe Provost's Commendation 2024</td>
@@ -159,7 +159,7 @@
             </tr>
         </table>
 
-        <table id ="languages-technologies">
+        <table id ="languages-technologies" class="section">
             <tr>
                 <th colspan="2">Languages and Technologies</th>
             </tr>
@@ -174,7 +174,7 @@
             </tr>
         </table>
 
-        <table id ="soft-skills">
+        <table id ="soft-skills" class="section">
             <tr>
                 <th colspan="2">Soft Skills</th>
             </tr>
@@ -211,22 +211,6 @@
         </ul>
         <p>Copyright © 2025 Huy Nhat Mai</p>
     </div>
-    <script>
-        document.querySelectorAll('#section-navbar a').forEach(link => {
-            link.addEventListener('click', function (e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href').substring(1);
-                const targetElement = document.getElementById(targetId);
-                const offset = 80; // Adjust this value based on your header height
-                const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
-                const offsetPosition = elementPosition - offset;
-
-                window.scrollTo({
-                    top: offsetPosition,
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
-</body>
+    <script src="script.js"></script>
+    </body>
 </html>
