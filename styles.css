@@ -51,7 +51,7 @@ body {
 
 #navbar ul li a {
     text-decoration: none;
-    color: black;
+    color: var(--text-color);
     font-weight: bold;
 }
 
@@ -171,14 +171,14 @@ table {
     margin: 20px 0;
     font-size: 16px;
     text-align: left;
-    background-color: #f9f9f9;
+    background-color: var(--card-bg);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px; 
     overflow: hidden; 
 }
 
 table th {
-    color: black;
+    color: var(--text-color);
     padding: 10px;
     font-weight: bold;
     border-bottom: 2px solid #ddd;
@@ -189,25 +189,26 @@ table td {
 }
 
 table td:hover {
-    background-color: #51f1fd32;
+    background-color: var(--tb-tbdata-hover-bg);
+    
 }
 
 table tr:first-child {
-    background-color: #51f2fd;
+    background-color: var(--tr-first-child-bg);
 }
 
-.soft-skills-list {
+.items-list {
     list-style-type: none;
     padding-left: 20px;
 }
 
-.soft-skills-list li {
+.items-list li {
     margin: 5px 0;
     position: relative;
     padding-left: 25px;
 }
 
-.soft-skills-list li::before {
+.items-list li::before {
     content: "\f164";    
     font-family: "Font Awesome 5 Free";
     position: absolute;
@@ -217,7 +218,7 @@ table tr:first-child {
 
 #projects a {
     text-decoration: none;
-    color: black;
+    color: var(--text-color);
 }
 
 #projects a:hover {
@@ -236,7 +237,7 @@ table tr:first-child {
 #section-navbar {
     position: sticky;
     top: 40px;
-    background-color: rgba(255, 255, 255, 0.755);
+    background-color: var(--navbar-bg);
     padding: 10px;
     z-index: 999;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -257,7 +258,7 @@ table tr:first-child {
 
 #section-navbar ul li a {
     text-decoration: none;
-    color: black;
+    color: var(--text-color);
     font-weight: bold;
     padding: 5px 10px;
     border-radius: 5px;
@@ -265,8 +266,8 @@ table tr:first-child {
 }
 
 #section-navbar ul li a:hover {
-    background-color: black;
-    color: white;
+    background-color: var(--section-navbar--hover-bg);
+    color: var(--section-navbar-hover);
 }
 
 .fa-moon {
@@ -308,6 +309,10 @@ table tr:first-child {
     --button-color: #ffffff;
     --navbar-line-color: rgba(159, 157, 157, 0.396);
     --box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    --section-navbar--hover-bg: black;
+    --section-navbar-hover: white;
+    --tr-first-child-bg: #51f2fd;
+    --tb-tbdata-hover-bg: #51f1fd32;
   }
 
   body.dark-mode {
@@ -320,4 +325,9 @@ table tr:first-child {
     --button-color: #ffffff;
     --navbar-line-color: rgba(255, 255, 255, 0.396);
     --box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.5);
+    --section-navbar--hover-bg: white;
+    --section-navbar-hover: black;
+    --tr-first-child-bg: #b9b7b774;
+    --tb-tbdata-hover-bg: #b9b7b774;
   }
+  
